@@ -1,5 +1,5 @@
 const songs = [
-  { name: "7 years", file: "songs/7 years.mp3" },
+  { name: "7 years", file: "7 years.mp3" },
   { name: "A Bar Song", file: "songs/a bar song (tipsy).mp3" },
   { name: "APT", file: "songs/apt.mp3" },
   { name: "Beautiful Things", file: "songs/beautiful things.mp3" },
