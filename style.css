@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/spiderman.jpeg') no-repeat center center/contain;
+  opacity: 0.2; /* Adjust transparency */
+  z-index: -1;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+}
+
+li {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+}
+
+li:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+audio {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+}
